@@ -1,0 +1,423 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "c93695cb-840f-4aeb-8a2f-63521b37390e",
+   "metadata": {},
+   "source": [
+    "Python Assignment"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "b9150ebc-a349-44fd-a569-00725137dc06",
+   "metadata": {},
+   "source": [
+    "Python basic variable"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "55160fe0-dd91-4f38-8372-42a35fb97e38",
+   "metadata": {},
+   "source": [
+    "1. Declare two variables, `x` and `y`, and assign them integer values. Swap the\n",
+    "values of these variables without using any temporary variable."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "2c50e91b-acb1-44c0-be3d-77e8891fd655",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "x=15\n",
+    "y=10"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "ee093b84-28c7-4007-b646-f0687130ff68",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "x = x + y\n",
+    "y = x - y\n",
+    "x = x - y"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 29,
+   "id": "7e7cd30f-dc80-4d9a-9f12-813577d35526",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "10\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(x)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "a7e429ed-554f-4623-ba87-9430d299d212",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "15"
+      ]
+     },
+     "execution_count": 5,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "y"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "161f90d6-5f06-471a-86bd-06bd29183be7",
+   "metadata": {},
+   "source": [
+    "2. Create a program that calculates the area of a rectangle. Take the length and\n",
+    "width as inputs from the user and store them in variables. Calculate and\n",
+    "display the area."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 31,
+   "id": "72cee575-e688-4d03-907f-0dcc19c5fa94",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      " 10\n",
+      " 20\n"
+     ]
+    }
+   ],
+   "source": [
+    "length=int(input())\n",
+    "width=int(input())"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 32,
+   "id": "4f32e37a-8c1f-4dc3-bb57-4b67302011d2",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "200\n"
+     ]
+    }
+   ],
+   "source": [
+    "area=length*width\n",
+    "print(area)\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "ec1a010f-857d-4fbf-8761-e542e29231d5",
+   "metadata": {},
+   "source": [
+    "3. Write a Python program that converts temperatures from Celsius to\n",
+    "Fahrenheit. Take the temperature in Celsius as input, store it in a variable,\n",
+    "convert it to Fahrenheit, and display the result.\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 33,
+   "id": "b50c712d-707f-4b71-b887-16f035a4e217",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      " 37\n"
+     ]
+    }
+   ],
+   "source": [
+    "celsius=float(input())"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 34,
+   "id": "f2a5e7c6-62ed-40c9-a9ee-a5ec6c940b6a",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "fahrenheit = (celsius * 9/5) + 32"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 35,
+   "id": "3000b117-4d43-4582-aa3b-9c9155f9fe7c",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "98.6"
+      ]
+     },
+     "execution_count": 35,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "fahrenheit"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "530b0c3b-95b1-43d1-85b0-427b1c53774e",
+   "metadata": {},
+   "source": [
+    "TOPIC: String Based Questions"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "a307484b-609d-493f-b841-e7b4eb4b1672",
+   "metadata": {},
+   "source": [
+    "1. Write a Python program that takes a string as input and prints the length of\n",
+    "the string."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 37,
+   "id": "0d7aa948-8cae-4ede-963d-d5f0768cead2",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter the string pwskills\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "The lenght of the string is:  8\n"
+     ]
+    }
+   ],
+   "source": [
+    "s=input(\"Enter the string\")\n",
+    "length=len(s)\n",
+    "print(\"The lenght of the string is: \",length)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "113c389d-5354-4e7e-a5ec-5322b4b6cc11",
+   "metadata": {},
+   "source": [
+    "2. Create a program that takes a sentence from the user and counts the number\n",
+    "of vowels (a, e, i, o, u) in the string."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 39,
+   "id": "b0c4432b-a939-4325-a7f7-cad95dbd1ce3",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "enter the sentence my name is Abhinav\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Total number of vowels are:  6\n"
+     ]
+    }
+   ],
+   "source": [
+    "s=input(\"enter the sentence\")\n",
+    "vowel=0\n",
+    "for char in s:\n",
+    "    if char in \"aeiouAEIOU\":\n",
+    "         vowel=vowel+1\n",
+    "    \n",
+    "print(\"Total number of vowels are: \",vowel)\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "02081ce3-21be-440f-a8f6-97e348b2bcbb",
+   "metadata": {},
+   "source": [
+    "3. Given a string, reverse the order of characters using string slicing and print\n",
+    "the reversed string."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 40,
+   "id": "dfe75692-6ac2-4828-ab31-cd4c655ae9ba",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "enter the string pwskills\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "The reversed string is:  sllikswp\n"
+     ]
+    }
+   ],
+   "source": [
+    "s=input(\"enter the string\")\n",
+    "s1=s[::-1]\n",
+    "print(\"The reversed string is: \",s1)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "2ff7c766-73c3-4f54-b4e8-8e55ccb2b0db",
+   "metadata": {},
+   "source": [
+    "4. Write a program that takes a string as input and checks if it is a palindrome\n",
+    "(reads the same forwards and backwards)."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 26,
+   "id": "775b20a1-4d4d-47be-be56-9eff24aa0c74",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "enter the string: abcdcba\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "it is pallindrome\n"
+     ]
+    }
+   ],
+   "source": [
+    "s=input(\"enter the string:\")\n",
+    "s1=s[::-1]\n",
+    "if (s==s1):\n",
+    "    print(\"it is pallindrome\")\n",
+    "else:\n",
+    "    print(\"not a pallindrome\")"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "29505127-17ae-4111-a8f4-3094bf480412",
+   "metadata": {},
+   "source": [
+    "5. Create a program that takes a string as input and removes all the spaces from\n",
+    "it. Print the modified string without spaces."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 28,
+   "id": "2e87b074-74c8-43cb-b9bb-054f2702cdf1",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter the string: My name is Abhinav\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "MynameisAbhinav\n"
+     ]
+    }
+   ],
+   "source": [
+    "s=input(\"Enter the string:\")\n",
+    "s1=s.replace(\" \",\"\")\n",
+    "print(s1)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "96d47144-599d-4489-a5d0-f8dfdcdd6d1d",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.8"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
